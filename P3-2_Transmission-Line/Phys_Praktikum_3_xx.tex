@@ -1,0 +1,54 @@
+\documentclass[paper=a4,11pt,titlepage,twoside=true,headings=normal,numbers=noenddot,captions=tableabove,listof=totoc,index=totoc,bibliography=totoc]{scrreprt}
+\input{pre-packages}
+\input{pre-newcommand}
+\input{pre-Seitenlayout}
+\input{pre-Kopf-Fusszeile-2010}
+\input{pre-Kopf-Fusszeilen-text-Bericht}
+\newcommand{\titelLV}{Physics Lab 3}
+%---------------------------- VARIABLEN festlegen ------------------
+%----------- Pro Versuch zu ändernde Angaben -----------------------
+\newcommand{\versuch}{2} % Versuchsnummer einfügen
+\newcommand{\untertitelb}{Signal Propagation in Coaxial Cables} % Titel des Versuchs einfügen
+\newcommand{\datumLV}{17.11.2020} % Datum einfügen
+\newcommand{\deadline}{1.12.2020} % Abgabedatum ist der 1.12.2020
+\newcommand{\dateLVa}{December 1st, 2020}
+\newcommand{\dateLVb}{December 8th, 2020}
+%----------- TITEL
+\newcommand{\untertitela}{Experiment P3-2}
+% -------- Student 1
+\newcommand{\nameA}{Hunter, Dennis}
+% --------- Student 2
+\newcommand{\nameB}{Kress, Sebastian}
+% --------- Student 3, falls vorhanden
+\newcommand{\nameC}{Ünlü, Cihan}
+%::::::::::::::::::::::::::::::::::
+%\input{chapters/glossar}
+%\renewcommand\USenglishtoday
+\DeclareNameAlias{author}{family-given}
+\DeclareNameAlias{editor}{family-given}
+\DeclareNameAlias{translator}{family-given}
+\addbibresource{quellen.bib}
+\begin{document}%\selectlanguage{USenglish}
+%-----------------------------------------------------------------
+\input{chapters/0_deck}
+%-----------------------------------------------------
+\tableofcontents
+\newpage
+%--------------------
+\input{chapters/1_einleitung}
+\input{chapters/2_aufbau}
+\input{chapters/3_durchführung}
+\input{chapters/4_auswertung}
+\input{chapters/5_fazit}
+%-------------------
+\newpage
+\listoffigures 
+\listoftables
+\input{chapters/7_glossar}
+\appendix
+\input{chapters/6_anhang}
+%\bibliography{Z:/Dokumente/HSRM/LaTex_Quellen/HSRM_Quellen/quellen}
+\printbibliography
+%\bibliographystyle{plaindin}
+%==========================================
+\end{document}
